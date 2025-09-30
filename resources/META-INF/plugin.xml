@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>com.mimoccc.aipluginii</id>
+    <name>AI Plugin II</name>
+    <version>0.1.0</version>
+    <vendor email="mj@mjdev.org" url="https://mjdev.org">Milan Jurkulák</vendor>
+
+    <description>
+        Open source plugin for IntelliJ IDEA and Android Studio using cloud APIs for free development assistance.
+    </description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <toolWindow
+                id="AIPluginWindow"
+                icon="/icons/pluginIcon.svg"
+                anchor="bottom"
+                factoryClass="com.mimoccc.aipluginii.ui.MainToolWindowFactory"
+        />
+    </extensions>
+
+    <actions>
+        <action id="AIPlugin.ShowToolWindow"
+                class="com.mimoccc.aipluginii.actions.ShowAIPluginAction"
+                text="Show AI Plugin"
+                description="Show AI Plugin Tool Window"/>
+    </actions>
+</idea-plugin>

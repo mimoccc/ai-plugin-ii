@@ -1,2 +1,4 @@
 # ai-plugin-ii
-intelij idea ai agent for coding
+
+open source plugin for intellij idea and android studio ising cloud apis for free devolepement assistance
+
